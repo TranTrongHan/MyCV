@@ -29,7 +29,7 @@ body {
     border-radius: 10px;
     padding: 40px;
     min-width: 40%;
-    max-height: 80vh;
+    max-height: 100vh;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -45,6 +45,7 @@ body {
 
 .contactInfo {
     padding-top: 40px;
+    min-height: 50vh;
 }
 
 .contactInfo>h2 {
@@ -136,7 +137,7 @@ body {
 .skills .box{
      position: relative;
      width: 100%;
-    
+    margin-bottom: 20px;
      justify-content: center;
      align-items: center ;
 }
@@ -144,10 +145,37 @@ body {
     text-transform: uppercase;
     color: gray;
     font-weight: 500;
+    font-size: 1.1rem;
+    padding-bottom: 10px;
 }
 .skills .box .percent{
     position: relative;
     width: 100%;
     height: 10px;
+    background-color: #fff;
+}
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: brown;
+    height: 100%;
+}
+@media (max-width:1000px) {
+    .container{
+        display: block;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+        
+
+    }
+    .contactInfo{
+        padding: 40px 20px 0 20px;
+    }
+    .leftSide{
+        border-radius: 10px 10px 0 0 ;
+        box-shadow: none;
+    }
+    .rightSide{
+        border-radius: 0 0 10px 10px;
+    }
 }
